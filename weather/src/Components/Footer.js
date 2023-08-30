@@ -7,13 +7,13 @@ const Footer=()=>{
     return(
         <footer className={styles.footer}>
             <div className={styles.icons}>
-                <a href='https://www.linkedin.com/in/marc-mansour-8616b81b6'>
+                <a  target="_blank" href='https://www.linkedin.com/in/marc-mansour-8616b81b6'>
                     <img className={styles.icon} src={LinkedIn} alt='LinkedIn'/>
                 </a>
-                <a href='https://github.com/CluelessArguer/Weather'>
+                <a  target="_blank" href='https://github.com/CluelessArguer/Weather'>
                     <img className={styles.icon} src={Github} alt='Github'/>
                 </a>
-                <a href='https://marcmansour.ca'>
+                <a  target="_blank" href='https://marcmansour.ca'>
                     <img className={styles.icon} src={PersonalWebsite} alt='Website'/>
                 </a>
             </div>
