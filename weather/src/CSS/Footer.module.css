@@ -1,0 +1,25 @@
+.footer{
+    padding-block:2rem;
+    color:#FFF;
+    background-color:#333;
+    text-align:center;
+    margin-block-start:1rem;
+}
+
+.link{
+    color:#FFF;
+}
+
+.icon{
+    inline-size:1.5rem;
+    block-size:1.5rem;
+    margin-inline:0.5rem;
+}
+
+.icon:hover{
+    cursor:pointer;
+}
+
+.icons{
+    margin-block-end:1rem;
+}

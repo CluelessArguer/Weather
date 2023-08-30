@@ -1,0 +1,16 @@
+{
+  "short_name": "Weather App",
+  "name": "Weather Application",
+  "icons": [
+    {
+      "src": "forecast.png",
+      "sizes": "26x26",
+      "type": "image/png"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#333333",
+  "background_color": "#FFFFFF",
+  "description": "Find out weather information on locations worldwide"
+}

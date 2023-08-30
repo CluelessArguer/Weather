@@ -1,0 +1,68 @@
+.searchBar{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-inline:2rem;
+    padding-block-start:2rem;
+    background-color: var(--grey);
+    block-size:6rem;
+}
+
+.search{
+    min-inline-size:40vw;
+    block-size:2rem;
+    font-family:inherit;
+    border-radius: 0.2rem 0 0 0.2rem;
+    border:none;
+    padding-inline:1rem;
+}
+
+.search:focus{
+    outline:none;
+}
+
+.submit{
+    border:none;
+    block-size:2rem;
+    font-family:inherit;
+    padding-inline:1rem;
+    border-radius: 0 0.2rem 0.2rem 0;
+    background-color:#F0F0F0;
+}
+
+.submit:hover{
+    cursor:pointer;
+}
+
+.cityList{
+    background-color: #333;
+    block-size: 10rem;
+    color:#FFF;
+    overflow: auto;
+    list-style-type: none;
+    z-index:1;
+    position:relative;
+}
+
+.cityItem{
+    margin-block-end: 0.2rem;
+    padding-block:0.5rem;
+    padding-inline-start:1rem;
+    font-size:0.9rem;
+    cursor:pointer;
+}
+
+.cityItem:hover{
+    background-color: #555555;
+}
+
+.cityItem:focus{
+    background-color: #555555;
+    outline:none;
+    border:none;
+}
+
+.stateCountry{
+    font-size:0.75rem;
+    color:#fbf5df;
+}

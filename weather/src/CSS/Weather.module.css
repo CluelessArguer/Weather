@@ -1,0 +1,226 @@
+.fontLarge{
+    font-size:1.6rem;
+}
+
+.fontMed{
+    font-size:1.2rem;
+}
+
+.fontSmall{
+    font-size:0.8rem;
+}
+
+.bold{
+    font-weight:bold;
+}
+
+.heading{
+    padding:0;
+    margin:0;
+    margin-block-end:0.2rem;
+}
+
+.weatherSection1{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+}
+
+.weatherInner, .weatherConditions{
+    margin-inline:0.5rem;
+    padding-block:1.5rem;
+    padding-inline:1.5rem;
+    background:#333;
+    color:#FFF;
+    border-radius: 0.25rem;
+}
+
+.weatherInner{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+    margin-block-start:0.5rem;
+}
+
+.airQuality{
+    margin-inline-start:0.5rem;
+    margin-block-start:0.5rem;
+    display:flex;
+    flex-direction:column;
+    flex:1.5;
+}
+
+.messages,.pollutants{
+    margin-inline-end:0.5rem;
+    padding-block:1.5rem 2rem;
+    padding-inline:1.5rem;
+    background:#333;
+    color:#FFF;
+    border-radius: 0.25rem;
+}
+
+.pollutants{
+    display:flex;
+    flex-direction:row;
+    margin-block-start:0.5rem;
+    justify-content:space-evenly;
+    text-align:center;
+}
+
+.messages{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    padding-block:2.5rem;
+}
+
+.index{
+    color:#333;
+    background-color:#FFF;
+    inline-size:10%;
+    margin-block-end:0.5rem;
+    text-align:center;
+    padding-block:0.25rem;
+}
+
+.pollutantContainer{
+    margin-block:0.25rem;
+    display:flex;
+    flex-direction:column;
+}
+
+.weatherConditions{
+    display:flex;
+    flex-direction:row;
+    margin-block-start:0.5rem;
+    justify-content:center;
+    text-align:center;
+    flex-wrap:wrap;
+}
+.messageChild{
+    display:flex;
+    flex-direction:column;
+
+}
+.temperature{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+}
+
+.currentConditions{
+    display:flex;
+    flex-direction:column;  
+    margin-inline-end:5rem;
+}
+
+.conditionImage{
+    block-size:5rem;
+    inline-size:5rem;
+}
+
+.condition{
+    display:flex;
+    flex-direction:column;
+    margin-inline:1.5rem;
+    margin-block:0.25rem;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+.airQualityHeading,.airQualityMessages{
+    flex:1;
+    align-self:center;
+    margin-inline:0.25rem;
+}
+
+.phases{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    text-align:center;
+    margin-block-start:1rem;
+}
+
+.phases div{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin-inline:0.3rem;
+
+}
+
+.phases img{
+    inline-size:2rem;
+    block-size:2rem;
+}
+
+.hourlyWeather,.forecastWeather{
+    display:flex;
+    flex-direction:column;
+    block-size:fit-content;
+    padding-block:0.5rem;
+    text-align:center;
+}
+
+
+.table{
+    margin-block-start:1rem;
+}
+
+.conditionText{
+    margin-block-end:0.5rem;
+    font-weight:bold;
+}
+
+.sliderContainer{
+    block-size:fit-content;
+}
+
+.carouselContainer{
+    margin-inline:0.5rem;
+    margin-block-end:0.5rem;
+    padding-inline:0.5;
+    padding-block:0.5rem;
+    border-radius:0 0.25rem 0.25rem 0.25rem;
+    background:#333;
+    color:#FFF;
+}
+
+.alignCenter{
+    align-self:center;
+}
+
+.headingForecast{
+    margin-block-start:0.5rem;
+    margin-inline:0.5rem;
+    background-color:#333;
+    padding-block:0.5rem;
+    padding-inline:2rem;
+    color:#FFF;
+    border-radius:0.25rem 0.25rem 0 0;
+    inline-size:fit-content;
+}
+
+.aqHeading{
+    margin-block-end:0.5rem;
+}
+
+.unavailable{
+    flex:1;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.unavailableInner{
+    background:#333;
+    padding-block:2rem;
+    padding-inline:2rem;
+    font-weight:bold;
+    color:#FFF;
+    border-radius: 0.25rem;;
+}

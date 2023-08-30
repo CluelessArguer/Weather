@@ -1,0 +1,18 @@
+{
+  "name": "weather-api",
+  "version": "1.0.0",
+  "description": "Calls weather api for weather data of specified location",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Marc Mansour",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "node-fetch": "^2.7.0",
+    "nodemon": "^3.0.1"
+  }
+}
