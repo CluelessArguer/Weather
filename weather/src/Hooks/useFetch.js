@@ -3,13 +3,13 @@ import {useEffect,useState} from "react";
 const useFetch=(url,info)=>{
     const [jsonData, setJSONData]=useState(null);
     const [isLoading, setLoading]=useState(true);
-    
+
     useEffect(()=>{
             const weatherData=JSON.parse(localStorage.getItem(`${info.lat},${info.lon}`))
             if(!weatherData){
             const abortController=new AbortController();
             setLoading(true);
-            fetch(`https://api.weather.marcmansour.ca/weather?${url}`,{
+            fetch(`${process.env.REACT_APP_URL}${url}`,{
                 signal:abortController.signal,
             })
                 .then(response=>{
@@ -31,7 +31,7 @@ const useFetch=(url,info)=>{
             }else{
                 setJSONData(weatherData);
             }
-    },[url]);
+    },[url, info.lat, info.lon]);
 
     return {jsonData, isLoading};
 }

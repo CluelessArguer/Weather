@@ -16,6 +16,7 @@ const Airquality=({quality})=>{
                 <span key={`${pollutant}2`}>{concentration.toFixed(2)} &#181;g/m<sup>3</sup></span>
             ];
             highestIndex.index=(index>highestIndex.index)?index:highestIndex.index;
+            index=highestIndex.index;
             if(index>=1&&index<=3){
                 highestIndex.risk='Low Risk';
                 highestIndex.messageGeneral=messages[0].messageGeneral

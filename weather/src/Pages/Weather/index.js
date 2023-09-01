@@ -1,6 +1,6 @@
 import Search from './Search';
 import Weather from './Weather';
-import {useState} from 'react';
+import {useState, useCallback} from 'react';
 
 const Home=()=>{
     const [cityInfo,setCityInfo]=useState({
@@ -9,20 +9,21 @@ const Home=()=>{
         lon:-0.11
     });
 
-    const retrieveCityInfo=(info)=>{
-        setCityInfo((prev)=>{
-            if(prev.name===info.name)
-                return {...prev}
-            else
-                return { 
-                    name:info.name,
-                    lat:info.lat,
-                    lon:info.lon
-                }
-                
-        }
-        );
-    };
+    const retrieveCityInfo=useCallback((info)=>{
+            setCityInfo((prev)=>{
+                if(prev.name===info.name)
+                    return {...prev}
+                else
+                    return { 
+                        name:info.name,
+                        lat:info.lat,
+                        lon:info.lon
+                    }
+                    
+            }
+        )
+    },[]);
+
     return(
         <div className='main'>
             <Search retrievecity={retrieveCityInfo} />

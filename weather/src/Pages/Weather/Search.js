@@ -17,7 +17,7 @@ const Search=({retrievecity})=>{
         listEvents:(event)=>searchHandlers.listEvents(event, cityInfo, dispatch),
         inputEvents:(event)=>searchHandlers.inputEvents(event, cityInfo, retrievecity, dispatch),
         findLocation:()=>searchHandlers.location(cityInfo, retrievecity, dispatch)
-    }),[cityInfo, dispatch]);
+    }),[cityInfo, dispatch, retrievecity]);
     const cityValidation=cityInfo.name!=='' && cityInfo.suggestions;
     const cities= useMemo(()=>City.getAllCities(),[]);
 
@@ -26,7 +26,7 @@ const Search=({retrievecity})=>{
             retrievecity(cityInfo);
         }
         
-    },[cityInfo])
+    },[cityInfo, retrievecity])
 
     if(cityValidation){
         var result=cities.filter(city=>{
